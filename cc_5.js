@@ -39,8 +39,8 @@ console.log(cartItems);          //Log final array
 // Task 4 Map Method, Scenario: Price Adjustments
 
 let prices = [100, 200, 300];
-let discountedPrices = prices.map(price => price * 0.9);
+let discountedPrices = prices.map(price => price * 0.9);    //Apply a 10% discount to each price
 
-console.log(discountedPrices);
+console.log(discountedPrices);    //Log discounted prices
 
 
