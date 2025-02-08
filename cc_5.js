@@ -80,4 +80,14 @@ let applyDiscount = function(price, discount) {
 let result = applyDiscount(100, 20);
 console.log(`Discounted Price: $${result.toFixed(2)}`);
 
+// Task 10 Arrow Function, Scenario: Loyalty Points
+
+const calculatePoints = (purchaseAmount) => {
+    let points = Math.floor(purchaseAmount / 10);   //1 point per $10
+    console.log(points);
+}; 
+
+    
+
+
 
