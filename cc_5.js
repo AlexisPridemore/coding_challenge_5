@@ -22,7 +22,7 @@ let order = {
         console.log('Total Amount: $${this.totalAmount}');
         console.log('Status: ${this.status}');
     } 
-};
+};    
 
 order.displayOrder();       //Call the method to Log the order details
 
@@ -84,8 +84,13 @@ console.log(`Discounted Price: $${result.toFixed(2)}`);
 
 const calculatePoints = (purchaseAmount) => {
     let points = Math.floor(purchaseAmount / 10);   //1 point per $10
-    console.log(points);
+    return points;
 }; 
+console.log('Loyalty points: ${points}');
+
+
+
+
 
     
 
