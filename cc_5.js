@@ -1,14 +1,14 @@
 // Task 1: Object Properties, Scenario: Customer Profile
 
 let customer = {
-    name: "Micheal Jordan",
-    age: 55,
-    email: "mjordan@gmail.com"
+    name: "John Doe",
+    age: 35,
+    email: "john.doe@email.com"
 };
 
 console.log('name: ${customerName}');
 console.log('age: ${customerAge}');
-console.log('email: ${customerEmail}');
+console.log('email: ${customerEmail}'); 
 
 // Task 2: Object Methods, Scenario: Order Details
 
@@ -25,3 +25,13 @@ let order = {
 };
 
 order.displayOrder();       //Call the method to Log the order details
+
+// Task 3 Array Manipulation (push, pop, shift, unshift), Scenario: Shopping Cart
+
+let cartItems =["laptop", "airpods", "iphone"];
+cartItems.push("ipad");                            //Add new product
+cartItems.pop();                                  //Remove last item
+cartItems.unshift("charger");                    //Add item at beginning
+cartItems.shift();                              //Remove first item
+
+console.log(cartItems);          //Log final array
