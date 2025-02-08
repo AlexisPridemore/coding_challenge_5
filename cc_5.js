@@ -57,3 +57,9 @@ let totalRevenue = sales.reduce((accumulator, currentSale) => accumulator + curr
 
 console.log(totalRevenue);   //log total revenue
 
+// Task 7 find() Method, Scenario: Customer Search
+
+let customers = ["Alice", "Bob", "Charlie", "David"];
+let foundCustomer = customers.find(customer => customer === "Charlie");   // locate the customer "Charlie"
+
+console.log(foundCustomer);     //log result
