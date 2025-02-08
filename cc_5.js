@@ -43,4 +43,9 @@ let discountedPrices = prices.map(price => price * 0.9);    //Apply a 10% discou
 
 console.log(discountedPrices);    //Log discounted prices
 
+// Task 5 Filter Method, Scenario: Product Availability
 
+let inventory = [50, 20, 60, 90, 100];
+let availableInventory = inventory.filter(quantity => quantity > 0);   //Use .filter() to remove products with zero stock
+
+console.log(availableInventory);    //Log filtered array
