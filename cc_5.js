@@ -68,5 +68,16 @@ console.log(foundCustomer);     //log result
 
 function calculateTax(amount, taxRate) {
     return amount * taxRate;
-}
+};
 console.log('The calculated tax on an amount of ${amount} with a tax rate of ${taxRate}% is: ${tax}');
+
+// Task 9 Function Expression, Scenario: Discount Application
+
+let applyDiscount = function(price, discount) {
+    const discountedPrice = price - (price * (discount / 100));
+    return discountedPrice;
+};
+let result = applyDiscount(100, 20);
+console.log(`Discounted Price: $${result.toFixed(2)}`);
+
+
