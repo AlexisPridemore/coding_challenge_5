@@ -49,3 +49,11 @@ let inventory = [50, 20, 0, 90, 100];
 let availableInventory = inventory.filter(quantity => quantity > 0);   //Use .filter() to remove products with zero stock
 
 console.log(availableInventory);    //Log filtered array
+
+// Task 6 Reduce Method, Scenario: Revenue Calculation
+
+let sales = [500, 300, 300, 400];
+let totalRevenue = sales.reduce((accumulator, currentSale) => accumulator + currentSale, 0);   //calculate total revenue
+
+console.log(totalRevenue);   //log total revenue
+
