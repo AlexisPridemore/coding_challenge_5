@@ -3,12 +3,12 @@
 let customer = {
     name: "John Doe",
     age: 35,
-    email: "john.doe@email.com"
+    email: "john.doe@email.com",
 };    //Declare object with properties
 
-console.log('name: ${customerName}');
-console.log('age: ${customerAge}');
-console.log('email: ${customerEmail}'); 
+console.log(`name: ${customer.name}`);
+console.log(`age: ${customer.age}`);
+console.log(`email: ${customer.email}`); 
 
 // Task 2: Object Methods, Scenario: Order Details
 
@@ -18,9 +18,9 @@ let order = {
     status: "Processing",
     
     displayOrder: function() {
-        console.log('Order ID: ${this.orderId}');
-        console.log('Total Amount: $${this.totalAmount}');
-        console.log('Status: ${this.status}');
+        console.log(`Order ID: ${this.orderId}`);
+        console.log(`Total Amount: $${this.totalAmount}`);
+        console.log(`Status: ${this.status}`);
     } 
 };    
 
@@ -67,9 +67,15 @@ console.log(foundCustomer);     //log result
 // Task 8  Function Declaration, Scenario: Tax Calculation
 
 function calculateTax(amount, taxRate) {
-    return amount * taxRate;    //return calculated tax
-};
-console.log('The calculated tax on an amount of ${amount} with a tax rate of ${taxRate}% is: ${tax}');
+    let tax= amount * taxRate;    //return calculated tax
+
+console.log(`The calculated tax on an amount of $${amount} with a tax rate of ${taxRate * 100}% is: $${tax}`);
+return tax;
+}; 
+let amount = 100;       // Amount to calculate tax on
+let taxRate = 0.15;     // Tax rate (15%)
+
+calculateTax(amount, taxRate); 
 
 // Task 9 Function Expression, Scenario: Discount Application
 
@@ -85,8 +91,10 @@ console.log(`Discounted Price: $${result.toFixed(2)}`);
 const calculatePoints = (purchaseAmount) => {
     let points = Math.floor(purchaseAmount / 10);   //1 point per $10
     return points;
-}; 
-console.log('Loyalty points: ${points}');
+};
+let purchaseAmount = 75;
+let points = calculatePoints(purchaseAmount);
+console.log(`You earned ${points} points for spending $${purchaseAmount}.`);
 
 
 
